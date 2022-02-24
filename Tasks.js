@@ -37,6 +37,15 @@ function symmetricDifference(arr1, arr2) {
     }
     return unique
 }
-console.log('symmetricDifference', symmetricDifference([1, 2, 4], [1, 2, 3]))
-console.log('symmetricDifference', symmetricDifference([1, 2, 3], [4, 5, 6]))
-console.log('symmetricDifference', symmetricDifference([8, 5, 9, 7, 0, 5, 77, 88], [3, 66, 9, 88, 5]))
+
+function symmetricDifferenceNew(arr1, arr2) {
+    let set1 = new Set(arr1);
+    let set2 = new Set(arr2);
+    let arr1Filtered = arr1.filter(i => !set2.has(i));
+    let arr2Filtered = arr2.filter(i => !set1.has(i));
+    return arr1Filtered.concat(arr2Filtered)
+}
+
+console.log('symmetricDifference', symmetricDifferenceNew([1, 2, 4], [1, 2, 3]))
+console.log('symmetricDifference', symmetricDifferenceNew([1, 2, 3], [4, 5, 6]))
+console.log('symmetricDifference', symmetricDifferenceNew([8, 5, 9, 7, 0, 5, 77, 88], [3, 66, 9, 88, 5]))
