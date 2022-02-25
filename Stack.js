@@ -20,19 +20,21 @@ class Stack {
     }
 }
 
-let newStack = new Stack();
-console.log(newStack.isEmpty());
-newStack.push(1);
-newStack.push(4);
-newStack.push(5);
-newStack.push(4);
-console.log(`peek: ${newStack.peek()}`)
-console.log(`peek: ${newStack.peek()}`)
-console.log(newStack.isEmpty());
-console.log(`pop: ${newStack.pop()}`)
-console.log(`pop: ${newStack.pop()}`)
-console.log(`pop: ${newStack.pop()}`)
-console.log(`pop: ${newStack.pop()}`)
-console.log(`pop: ${newStack.pop()}`)
-console.log(`pop: ${newStack.pop()}`)
-console.log(newStack.peek())
+// let newStack = new Stack();
+// console.log(newStack.isEmpty());
+// newStack.push(1);
+// newStack.push(4);
+// newStack.push(5);
+// newStack.push(4);
+// console.log(`peek: ${newStack.peek()}`)
+// console.log(`peek: ${newStack.peek()}`)
+// console.log(newStack.isEmpty());
+// console.log(`pop: ${newStack.pop()}`)
+// console.log(`pop: ${newStack.pop()}`)
+// console.log(`pop: ${newStack.pop()}`)
+// console.log(`pop: ${newStack.pop()}`)
+// console.log(`pop: ${newStack.pop()}`)
+// console.log(`pop: ${newStack.pop()}`)
+// console.log(newStack.peek())
+
+module.exports = Stack;
